@@ -15,6 +15,14 @@ function getAge(){
     let age = document.getElementById("agehere").value;
     return age
 }
+function getGender(){
+    for(let i=1;i <4 ; i++) {
+        let radio = document.getElementById(i).checked;
+        if (radio) {
+            return document.getElementById(i).value;
+        }
+    }
+}
 
 function radioCheck() {
     for(let i=1;i <4 ; i++) {
@@ -26,11 +34,4 @@ function radioCheck() {
     return false;
 }
 
-function getGender(){
-    for(let i=1;i <4 ; i++) {
-        let radio = document.getElementById(i).checked;
-        if (radio) {
-            return document.getElementById(i).value;
-        }
-    }
-}
+
