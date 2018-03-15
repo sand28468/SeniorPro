@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Question</title>
+    <title>Fortune</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body bgcolor="#E6E6FA">
@@ -21,6 +21,13 @@
     });
  </script>
 </header>
+   <button id="myButton" style="margin-top: 20px; font-size: 20px; background-color: white;border: 2px solid lightblue">Are you ready to start?</button>
+<script>
+    const myButton= document.getElementById('myButton');
+    myButton.addEventListener('click', () => {
+            window.location.href = "index.html";
+    })
+</script>
 </body>
 <footer>
     <p>&copy;2018 HumzCorp, The Blog</p>
