@@ -7,18 +7,19 @@
 </head>
 <body bgcolor="#E6E6FA">
 <header>
+    <button id="back" style="  position: absolute;
+    left:25px;
+    top: 25px; font-size: 10px;
+    background-color: white;
+    border: 1px solid black;
+     border-radius: 30px">Back to Home</button>
  <h1 id="top">Fortune</h1>
  <script>
-    const topButton= document.getElementById('top');
-    topButton.addEventListener('mouseover', () =>{
-        document.getElementById('top').style.color = 'blue';
-    });
-    topButton.addEventListener('mouseout', () =>{
-        document.getElementById('top').style.color = 'black';
-    });
+    const topButton= document.getElementById('back');
     topButton.addEventListener('click', () => {
         window.location.href = "index.html";
-    });
+    })
+
  </script>
 </header>
    <button id="myButton" style="margin-top: 20px; font-size: 20px; background-color: white;border: 2px solid lightblue; border-radius: 30px">Are you ready to start?</button>
