@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <h1 id="top">Fortune</h1>
+    <script>
+        const topButton= document.getElementById('top')
+        topButton.addEventListener('mouseover', () =>{
+            document.getElementById('top').style.color = 'blue';
+        });
+        topButton.addEventListener('mouseout', () =>{
+            document.getElementById('top').style.color = 'black';
+        });
+        topButton.addEventListener('click', () => {
+            window.location.href = "index.html";
+        });
+    </script>
+    </header>
+     <p>
+    <center><a href="Infopage.html"><img src="source.gif" alt="Start Game" width="240" height="180" align="middle"></a></center>
+
+     </p>
+</body>
+<footer>
+    <p>&copy;2018 SeniorPro, The Blog</p>
+</footer>
+</html>
