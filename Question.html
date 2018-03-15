@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1 id="top">Fortune</h1>
+    <script>
+        const topButton= document.getElementById('top')
+        topButton.addEventListener('mouseover', () =>{
+            document.getElementById('top').style.color = 'blue';
+        });
+        topButton.addEventListener('mouseout', () =>{
+            document.getElementById('top').style.color = 'black';
+        });
+        topButton.addEventListener('click', () => {
+            window.location.href = "index.html";
+        });
+    </script>
+</header>
+ <script src="questionRaandom.js">
+     quesRan()
+ </script>
+</body>
+</html>
