@@ -9,7 +9,7 @@
 <header>
  <h1 id="top">Fortune</h1>
  <script>
-    const topButton= document.getElementById('top')
+    const topButton= document.getElementById('top');
     topButton.addEventListener('mouseover', () =>{
         document.getElementById('top').style.color = 'blue';
     });
@@ -22,10 +22,29 @@
  </script>
 </header>
    <button id="myButton" style="margin-top: 20px; font-size: 20px; background-color: white;border: 2px solid lightblue; border-radius: 30px">Are you ready to start?</button>
+   <div id="foo" style="margin-top: 20px">
+       Go back to change Information
+   </div>
+<script>
+    const myText= document.getElementById ("foo");
+        myText.addEventListener('mouseover',() =>{
+            document.getElementById ("foo").style.color="blue"
+        myText.addEventListener('mouseout', () =>{
+            document.getElementById('foo').style.color = 'black'
+        });
+        myText.addEventListener('click', () => {
+            window.location.href = "infopage.html";
+        });
+    });
+</script>
+<script src="infoCheck.js"></script>
 <script>
     const myButton= document.getElementById('myButton');
     myButton.addEventListener('click', () => {
             window.location.href = "Question.html";
+            getAge()
+            getGender()
+
     })
 </script>
 </body>

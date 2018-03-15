@@ -6,11 +6,14 @@ function textCheck() {
         } else {
             return true;
         }
-        return false;
     }else{
         return false;
     }
 
+}
+function getAge(){
+    let age = document.getElementById("agehere").value;
+    return age
 }
 
 function radioCheck() {
