@@ -38,11 +38,14 @@
  border: 2px solid lightblue;
  border-radius: 8px">Done!</button>
  <script src="infoCheck.js"></script>
+ <script src="database.js"></script>
  <script>
     const myButton= document.getElementById('myButton');
     myButton.addEventListener('click', () => {
         if(textCheck() && radioCheck()) {
             window.location.href = "Ready.html";
+            let age1 = getAge();
+            let gen1 = getGender();
         }else if (textCheck()===true && radioCheck()===false){
             alert("Please select your gender")
         }else if(textCheck()===false && radioCheck()===true){
@@ -57,3 +60,4 @@
     <p>&copy;2018 SeniorPro, The Blog</p>
 </footer>
 </html>
+
