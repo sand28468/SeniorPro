@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Question</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="questionRandom.js"></script>
 </head>
 <body>
 <header>
@@ -12,19 +13,36 @@
     top: 25px; font-size: 10px;
     background-color: white;
     border: 1px solid black;
-     border-radius: 30px">Back to Home</button>
-    <h1 id="top">Fortune</h1>
-    <script>
-        const topButton= document.getElementById('back');
-        topButton.addEventListener('click', () => {
-            window.location.href = "index.html";
-        })
-
-    </script>
-
+    border-radius: 30px">Back to Home</button>
+    <h1 id="top">Question No. 1</h1>
 </header>
- <script src="questionRaandom.js">
-     quesRan()
- </script>
+<button id="test" style="margin-top: 40px;
+ font-size: 30px;
+ background-color: white;
+ border: 2px solid lightblue;
+ border-radius: 8px">hums</button>
 </body>
+<script>
+    let i=1;
+    const myButton= document.getElementById('test');
+    myButton.addEventListener('click', () => {
+        if(i<10) {
+        i++;
+        myFunction(i)
+    }else if(i>=10){
+        window.location.href = "Conclude.html"
+    }
+    })
+    function myFunction(t) {
+        document.getElementById("top").innerHTML = "Question No." + i;
+    }
+</script>
+
+<script>
+    const topButton= document.getElementById('back');
+    topButton.addEventListener('click', () => {
+        window.location.href = "index.html";
+    })
+
+</script>
 </html>

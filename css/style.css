@@ -2,9 +2,9 @@ header {
     border: 8px dotted;
     border-color: #ffd8e4 ;
     border-radius: 10px;
-    /*padding-top: 50px;*/
-    padding-bottom: 50px;
-    margin-bottom: 70px;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    margin-bottom: 50px;
     line-height: 1;
 }
 body {
@@ -27,5 +27,11 @@ footer {
     background-color: #efefef;
     text-align: center;
 
+}
+#top {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
