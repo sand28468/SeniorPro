@@ -15,17 +15,67 @@
     border: 1px solid black;
     border-radius: 30px">Back to Home</button>
     <h1 id="top">Question No. 1</h1>
+    <script>
+    const topButton= document.getElementById('back');
+    topButton.addEventListener('click', () => {
+    window.location.href = "index.html";
+    })
+
+    </script>
 </header>
-<button id="test" style="margin-top: 40px;
- font-size: 20px;
- background-color: white;
- border: 2px solid lightblue;
- border-radius: 8px"> Next! </button>
+
+
+<img src="exterior-01.jpg" alt="Mountain View" height="150" width="150">
+<button id="1" name="A" style="margin-top: 40px;
+font-size: 20px;
+background-color: white;
+border: 2px solid lightblue;
+border-radius: 8px"> A </button>
+
+
+<img src="img.jpg" alt="Mountain View" height="150" width="150">
+<button id="2" name="B" style="margin-top: 40px;
+font-size: 20px;
+background-color: white;
+border: 2px solid lightblue;
+border-radius: 8px;"> B </button>
+<!--<div id="shop">-->
+    <!--<div class="content">-->
+        <!--<img src="exterior-01.jpg" alt="Mountain View" height="150" width="150">-->
+        <!--<a><button id="1" name="A" style="margin-top: 40px;-->
+<!--font-size: 20px;-->
+<!--background-color: white;-->
+<!--border: 2px solid lightblue;-->
+<!--border-radius: 8px"> A </button></a>-->
+    <!--</div>-->
+    <!--<div class="content">-->
+        <!--<img src="img.jpg" alt="Mountain View" height="150" width="150">-->
+        <!--<a><button id="2" name="B" style="margin-top: 40px;-->
+<!--font-size: 20px;-->
+<!--background-color: white;-->
+<!--border: 2px solid lightblue;-->
+<!--border-radius: 8px;"> B </button></a>-->
+    <!--</div>-->
+
+<!--</div>-->
+
 </body>
 <script>
-    let i=1;
-    const myButton= document.getElementById('test');
-    myButton.addEventListener('click', () => {
+    var i=1;
+    const myButtonA= document.getElementById('1');
+    const myButtonB= document.getElementById('2');
+    myButtonA.addEventListener('click', () => {
+        if(i<10) {
+        i++;
+        myFunction(i)
+    }else if(i>=10){
+        window.location.href = "Conclude.html"
+    }
+    })
+    function myFunction(t) {
+        document.getElementById("top").innerHTML = "Question No. " + i;
+    }
+    myButtonB.addEventListener('click', () => {
         if(i<10) {
         i++;
         myFunction(i)
@@ -37,12 +87,7 @@
         document.getElementById("top").innerHTML = "Question No. " + i;
     }
 </script>
-
-<script>
-    const topButton= document.getElementById('back');
-    topButton.addEventListener('click', () => {
-        window.location.href = "index.html";
-    })
-
-</script>
+<footer>
+    <p>&copy;2018 SeniorPro, The Blog</p>
+</footer>
 </html>
